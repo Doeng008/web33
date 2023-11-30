@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="st.css">
+
+  <style>
+    @keyframes masukTengah {
+      0% {
+        transform: translateY(-100%); /* Mulai dari luar layar sebelah atas */
+      }
+      100% {
+        transform: translateY(0); /* Pindah ke tengah layar */
+      }
+    }
+
+    .transisi-elemen {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+      transition: transform 0.5s ease; /* Transisi menggunakan properti transform */
+      animation: masukTengah 0.5s ease forwards; /* Animasi saat elemen pertama kali dimuat */
+    }
+
+    .transisi-elemen.hidden {
+      animation: none; /* Nonaktifkan animasi saat elemen di-hidden */
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+  <div class="transisi-elemen" id="transisiElemen">Hover me</div>
+</div>
+  <script>
+    var transisiElemen = document.getElementById('transisiElemen');
+    var lastScrollTop = 0;
+
+    window.addEventListener('scroll', function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        // Scrolling ke bawah
+        transisiElemen.classList.remove('hidden');
+      } else {
+        // Scrolling ke atas
+        transisiElemen.classList.add('hidden');
+      }
+
+      lastScrollTop = scrollTop;
+    });
+  </script>
+  <script type="text/javascript" src="sc.js"></script>
+</body>
+</html>

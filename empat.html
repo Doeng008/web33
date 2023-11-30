@@ -1,0 +1,2501 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Oswald:500,600" rel="stylesheet');
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet');
+  
+    .ebb-18-main-container {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+  
+    .ebb-18-main-container img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+  
+    .ebb-18-main-container *,
+    .ebb-18-main-container *:before,
+    .ebb-18-main-container *:after {
+      -webkit-box-sizing: inherit;
+      box-sizing: inherit;
+    }
+  
+    .ebb-18-main-container {
+      font-family: "Oswald", Verdana, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.3;
+      margin-bottom: 40px;
+    }
+  
+    .ebb-18-main-container a {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .ebb-18-main-container .ebb-18-main-logosilver {
+      max-width: 70px;
+      width: 100%;
+      vertical-align: middle;
+      margin: 0 auto;
+    }
+  
+    .ebb-18-main-container .ebb-18-main-logogold {
+      max-width: 90px;
+      width: 100%;
+      vertical-align: middle;
+      margin: 0 auto 0 0;
+      padding-bottom: .2em;
+    }
+  
+    .ebb-18-silver-spots .ebb-18-small-container {
+      padding-right: 2em !important;
+      padding-left: 2em;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .ebb-18-main-container .ebb-18-small-container {
+      padding-right: 4em;
+      padding-left: 2em;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .ebb-18-btn {
+      display: inline-block;
+      vertical-align: middle;
+      background: none;
+      outline: 0 none;
+      border: 0 none;
+      border-radius: 0;
+      padding: 8px 25px;
+      background-color: #000;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  
+    .ebb-18-gold-spot-exposition {
+      width: 58%;
+      max-height: 670px;
+      /**Styles for sliders**/
+      /*first slider*/
+      /**second slider**/
+      /**tui slider**/
+      /**p&0 slider**/
+      /**lufthansa slider**/
+      /**europecar slider**/
+    }
+  
+    .ebb-18-gold-spot-exposition .slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .ebb-18-gold-spot-exposition .slider input[name="switch"],
+    .ebb-18-gold-spot-exposition .slider input[name="second-switch"],
+    .ebb-18-gold-spot-exposition .slider input[name="third-switch"],
+    .ebb-18-gold-spot-exposition .slider input[name="fourth-switch"],
+    .ebb-18-gold-spot-exposition .slider input[name="fifth-switch"],
+    .ebb-18-gold-spot-exposition .slider input[name="sixth-switch"] {
+      display: none;
+    }
+  
+    .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition__switch,
+    .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition__second-switch {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: -45px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  
+    .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition__switch .ebb-18-gold-spot-exposition__label,
+    .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition__second-switch .ebb-18-gold-spot-exposition__label {
+      display: inline-block;
+      width: 8px;
+      height: 72px;
+      cursor: pointer;
+      margin: 11px 20px;
+      background-color: rgba(255, 86, 92, 0.5);
+      position: relative;
+      -webkit-transition: 0.5s ease-out;
+      transition: 0.5s ease-out;
+      font-size: 0;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn1:checked~.switch label[for="ebb-18-btn1"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn2:checked~.switch label[for="ebb-18-btn2"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn3:checked~.switch label[for="ebb-18-btn3"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn4:checked~.second-switch label[for="ebb-18-btn4"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn5:checked~.second-switch label[for="ebb-18-btn5"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn6:checked~.second-switch label[for="ebb-18-btn6"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn3-1:checked~.switch label[for="ebb-18-btn3-1"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn3-2:checked~.switch label[for="ebb-18-btn3-2"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn3-3:checked~.switch label[for="ebb-18-btn3-3"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn4-1:checked~.second-switch label[for="ebb-18-btn4-1"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn4-2:checked~.second-switch label[for="ebb-18-btn4-2"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn4-3:checked~.second-switch label[for="ebb-18-btn4-3"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn5-1:checked~.switch label[for="ebb-18-btn5-1"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn5-2:checked~.switch label[for="ebb-18-btn5-2"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn5-3:checked~.switch label[for="ebb-18-btn5-3"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn6-1:checked~.second-switch label[for="ebb-18-btn6-1"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn6-2:checked~.second-switch label[for="ebb-18-btn6-2"],
+    .ebb-18-gold-spot-exposition #ebb-18-btn6-3:checked~.second-switch label[for="ebb-18-btn6-3"] {
+      background-color: #ff565c;
+    }
+  
+    .ebb-18-gold-spot-exposition .ebb-18-slider-inner {
+      overflow: hidden;
+      height: 670px;
+      background-color: #000000;
+    }
+  
+    .ebb-18-gold-spot-exposition .ebb-18-slides {
+      height: 100%;
+      -webkit-transition: all 1s;
+      transition: all 1s;
+      position: relative;
+    }
+  
+    .ebb-18-gold-spot-exposition .ebb-18-slides .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      -webkit-transition: opacity 1s ease-out 0.1s;
+      transition: opacity 1s ease-out 0.1s;
+    }
+  
+    .ebb-18-gold-spot-exposition .ebb-18-slides .slide.slide1 {
+      -webkit-animation: slideVisible 21s linear infinite -1s;
+      animation: slideVisible 21s linear infinite -1s;
+    }
+  
+    .ebb-18-gold-spot-exposition .ebb-18-slides .slide.slide2 {
+      -webkit-animation: slideVisible 21s linear infinite 6s;
+      animation: slideVisible 21s linear infinite 6s;
+    }
+  
+    .ebb-18-gold-spot-exposition .ebb-18-slides .slide.slide3 {
+      -webkit-animation: slideVisible 21s linear infinite 13s;
+      animation: slideVisible 21s linear infinite 13s;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn1:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide1 {
+      opacity: 1;
+      -webkit-transition: opacity 1.5s ease-out 0.1s;
+      transition: opacity 1.5s ease-out 0.1s;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn2:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide2 {
+      opacity: 1;
+      -webkit-transition: opacity 1.5s ease-out 0.1s;
+      transition: opacity 1.5s ease-out 0.1s;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn3:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide3 {
+      opacity: 1;
+      -webkit-transition: opacity 1.5s ease-out 0.1s;
+      transition: opacity 1.5s ease-out 0.1s;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn4:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide1 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn5:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide2 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn6:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide3 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn3-1:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide1 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn3-2:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide2 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn3-3:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide3 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn4-1:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide1 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn4-2:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide2 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn4-3:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide3 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn5-1:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide1 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn5-2:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide2 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn5-3:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide3 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn6-1:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide1 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn6-2:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide2 {
+      opacity: 1;
+    }
+  
+    .ebb-18-gold-spot-exposition #ebb-18-btn6-3:checked~.ebb-18-slider-inner .ebb-18-slides .slide.slide3 {
+      opacity: 1;
+    }
+  
+    /***Banner slider***/
+    .ebb-18-banner {
+      /**Banner slider - styles for moving ebb-18-slides - responsive  **/
+    }
+  
+    .ebb-18-banner .ebb-18-ebb-18-banner-slider {
+      position: relative;
+      z-index: 99;
+      width: 100%;
+      height: 100%;
+      -webkit-animation: moveInBottom 0.5s ease-out;
+      animation: moveInBottom 0.5s ease-out;
+      margin: -270px 30px 0 auto;
+    }
+  
+    .ebb-18-banner .ebb-18-ebb-18-banner-slider input,
+    .ebb-18-banner .ebb-18-ebb-18-banner-slider .ebb-18-banner-switch {
+      display: none;
+    }
+  
+    .ebb-18-banner .ebb-18-ebb-18-banner-slider input[name="ebb-18-banner-switch"] {
+      display: none;
+    }
+  
+    .ebb-18-banner .ebb-18-banner-switch {
+      position: absolute;
+      z-index: 9;
+      width: 100%;
+      bottom: 8px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  
+    .ebb-18-banner .ebb-18-banner-switch label {
+      display: inline-block;
+      width: 25%;
+      height: 10px;
+      cursor: pointer;
+      margin: 0 8px;
+      background-color: rgba(255, 86, 92, 0.5);
+      position: relative;
+    }
+  
+    .ebb-18-banner #ebb-18-btn-1b:checked~.ebb-18-banner-switch label[for="ebb-18-btn-1b"],
+    .ebb-18-banner #ebb-18-btn-2b:checked~.ebb-18-banner-switch label[for="ebb-18-btn-2b"],
+    .ebb-18-banner #ebb-18-btn-3b:checked~.ebb-18-banner-switch label[for="ebb-18-btn-3b"],
+    .ebb-18-banner #ebb-18-btn-4b:checked~.ebb-18-banner-switch label[for="ebb-18-btn-4b"],
+    .ebb-18-banner #ebb-18-btn-5b:checked~.ebb-18-banner-switch label[for="ebb-18-btn-5b"],
+    .ebb-18-banner #ebb-18-btn-6b:checked~.ebb-18-banner-switch label[for="ebb-18-btn-6b"] {
+      background-color: #ff565c;
+    }
+  
+    .ebb-18-banner .ebb-18-ebb-18-banner-ebb-18-slider-inner {
+      overflow: hidden;
+      width: 100%;
+    }
+  
+    .ebb-18-banner .ebb-18-animation-wrap {
+      width: 100%;
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+      -webkit-transition: 5s;
+      transition: 5s;
+    }
+  
+    .ebb-18-banner .ebb-18-banner-ebb-18-slides {
+      width: 100%;
+      -webkit-transition: all 1s;
+      transition: all 1s;
+    }
+  
+    .ebb-18-banner .ebb-18-banner-ebb-18-slides .ebb-18-banner-slide {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .ebb-18-banner-switch label[for="ebb-18-btn-1b"] {
+      -webkit-animation: slideZone 21s infinite -1s;
+      animation: slideZone 21s infinite -1s;
+    }
+  
+    .ebb-18-banner-switch label[for="ebb-18-btn-2b"] {
+      -webkit-animation: slideZone 21s infinite 5s, slideZone 21s infinite 15s;
+      animation: slideZone 21s infinite 5s, slideZone 21s infinite 15s;
+    }
+  
+    .ebb-18-banner-switch label[for="ebb-18-btn-3b"] {
+      -webkit-animation: slideZone 21s infinite 10s;
+      animation: slideZone 21s infinite 10s;
+    }
+  
+    /*Animation for cards in banner*/
+    @-webkit-keyframes moveInBottom {
+      0% {
+        -webkit-transform: translateY(5%);
+        transform: translateY(5%);
+        opacity: 0;
+      }
+  
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  
+    @keyframes moveInBottom {
+      0% {
+        -webkit-transform: translateY(5%);
+        transform: translateY(5%);
+        opacity: 0;
+      }
+  
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  
+    @-webkit-keyframes bullet {
+  
+      2%,
+      24% {
+        background-color: #ff565c;
+      }
+  
+      0%,
+      25%,
+      100% {
+        background-color: rgba(255, 86, 92, 0.5);
+      }
+    }
+  
+    @keyframes bullet {
+  
+      2%,
+      24% {
+        background-color: #ff565c;
+      }
+  
+      0%,
+      25%,
+      100% {
+        background-color: rgba(255, 86, 92, 0.5);
+      }
+    }
+  
+    @-webkit-keyframes slideZone {
+  
+      2%,
+      24% {
+        background-color: #ff565c;
+      }
+  
+      0%,
+      25%,
+      100% {
+        background-color: rgba(255, 86, 92, 0.5);
+      }
+    }
+  
+    @keyframes slideZone {
+  
+      2%,
+      24% {
+        background-color: #ff565c;
+      }
+  
+      0%,
+      25%,
+      100% {
+        background-color: rgba(255, 86, 92, 0.5);
+      }
+    }
+  
+    @-webkit-keyframes cardMove {
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      20% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      25% {
+        -webkit-transform: translateX(-376px);
+        transform: translateX(-376px);
+      }
+  
+      45% {
+        -webkit-transform: translateX(-376px);
+        transform: translateX(-376px);
+      }
+  
+      50% {
+        -webkit-transform: translateX(-752px);
+        transform: translateX(-752px);
+      }
+  
+      70% {
+        -webkit-transform: translateX(-752px);
+        transform: translateX(-752px);
+      }
+  
+      75% {
+        -webkit-transform: translateX(-376px);
+        transform: translateX(-376px);
+      }
+  
+      95% {
+        -webkit-transform: translateX(-376px);
+        transform: translateX(-376px);
+      }
+    }
+  
+    @keyframes cardMove {
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      20% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      25% {
+        -webkit-transform: translateX(-376px);
+        transform: translateX(-376px);
+      }
+  
+      45% {
+        -webkit-transform: translateX(-376px);
+        transform: translateX(-376px);
+      }
+  
+      50% {
+        -webkit-transform: translateX(-752px);
+        transform: translateX(-752px);
+      }
+  
+      70% {
+        -webkit-transform: translateX(-752px);
+        transform: translateX(-752px);
+      }
+  
+      75% {
+        -webkit-transform: translateX(-376px);
+        transform: translateX(-376px);
+      }
+  
+      95% {
+        -webkit-transform: translateX(-376px);
+        transform: translateX(-376px);
+      }
+    }
+  
+    @-webkit-keyframes smallCardMove {
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      20% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      25% {
+        -webkit-transform: translateX(-320px);
+        transform: translateX(-320px);
+      }
+  
+      45% {
+        -webkit-transform: translateX(-320px);
+        transform: translateX(-320px);
+      }
+  
+      50% {
+        -webkit-transform: translateX(-640px);
+        transform: translateX(-640px);
+      }
+  
+      70% {
+        -webkit-transform: translateX(-640px);
+        transform: translateX(-640px);
+      }
+  
+      75% {
+        -webkit-transform: translateX(-320px);
+        transform: translateX(-320px);
+      }
+  
+      95% {
+        -webkit-transform: translateX(-320px);
+        transform: translateX(-320px);
+      }
+    }
+  
+    @keyframes smallCardMove {
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      20% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      25% {
+        -webkit-transform: translateX(-320px);
+        transform: translateX(-320px);
+      }
+  
+      45% {
+        -webkit-transform: translateX(-320px);
+        transform: translateX(-320px);
+      }
+  
+      50% {
+        -webkit-transform: translateX(-640px);
+        transform: translateX(-640px);
+      }
+  
+      70% {
+        -webkit-transform: translateX(-640px);
+        transform: translateX(-640px);
+      }
+  
+      75% {
+        -webkit-transform: translateX(-320px);
+        transform: translateX(-320px);
+      }
+  
+      95% {
+        -webkit-transform: translateX(-320px);
+        transform: translateX(-320px);
+      }
+    }
+  
+    @-webkit-keyframes slideVisible {
+      0% {
+        opacity: 0;
+      }
+  
+      8% {
+        opacity: 1;
+      }
+  
+      30% {
+        opacity: 1;
+      }
+  
+      40% {
+        opacity: 0;
+      }
+  
+      100% {
+        opacity: 0;
+      }
+    }
+  
+    @keyframes slideVisible {
+      0% {
+        opacity: 0;
+      }
+  
+      8% {
+        opacity: 1;
+      }
+  
+      30% {
+        opacity: 1;
+      }
+  
+      40% {
+        opacity: 0;
+      }
+  
+      100% {
+        opacity: 0;
+      }
+    }
+  
+    /**Animation for sliders dots**/
+    .switch label[for="ebb-18-btn1"],
+    .second-switch label[for="ebb-18-btn4"],
+    .switch label[for="ebb-18-btn3-1"],
+    .second-switch label[for="ebb-18-btn4-1"],
+    .switch label[for="ebb-18-btn5-1"],
+    .second-switch label[for="ebb-18-btn6-1"] {
+      -webkit-animation: bullet 21s ease-out infinite 0s;
+      animation: bullet 21s ease-out infinite 0s;
+    }
+  
+    .switch label[for="ebb-18-btn2"],
+    .second-switch label[for="ebb-18-btn5"],
+    .switch label[for="ebb-18-btn3-2"],
+    .second-switch label[for="ebb-18-btn4-2"],
+    .switch label[for="ebb-18-btn5-2"],
+    .second-switch label[for="ebb-18-btn6-2"] {
+      -webkit-animation: bullet 21s ease-out infinite 7s;
+      animation: bullet 21s ease-out infinite 7s;
+    }
+  
+    .switch label[for="ebb-18-btn3"],
+    .second-switch label[for="ebb-18-btn6"],
+    .switch label[for="ebb-18-btn3-3"],
+    .second-switch label[for="ebb-18-btn4-3"],
+    .switch label[for="ebb-18-btn5-3"],
+    .second-switch label[for="ebb-18-btn6-3"] {
+      -webkit-animation: bullet 21s ease-out infinite 14s;
+      animation: bullet 21s ease-out infinite 14s;
+    }
+  
+    /**Reset for animation**/
+    #ebb-18-btn-1b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-animation-wrap,
+    #ebb-18-btn-2b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-animation-wrap,
+    #ebb-18-btn-3b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-animation-wrap,
+    #ebb-18-btn-4b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-animation-wrap,
+    #ebb-18-btn-5b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-animation-wrap,
+    #ebb-18-btn-6b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-animation-wrap {
+      -webkit-animation-play-state: paused !important;
+      animation-play-state: paused !important;
+      -webkit-animation: none;
+      animation: none;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      -webkit-transition: 5s;
+      transition: 5s;
+    }
+  
+    input:checked~.ebb-18-banner-switch label,
+    input:checked~.switch label,
+    input:checked~.second-switch label {
+      -webkit-animation-play-state: paused !important;
+      animation-play-state: paused !important;
+      -webkit-animation: none;
+      animation: none;
+    }
+  
+    #ebb-18-btn1:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn2:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn3:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn4:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn5:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn6:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn3-1:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn3-2:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn3-3:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn4-1:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn4-2:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn4-3:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn5-1:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn5-2:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn5-3:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn6-1:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn6-2:checked~.ebb-18-slider-inner .ebb-18-slides .slide,
+    #ebb-18-btn6-3:checked~.ebb-18-slider-inner .ebb-18-slides .slide {
+      -webkit-animation-play-state: paused !important;
+      animation-play-state: paused !important;
+      -webkit-animation: none !important;
+      animation: none !important;
+      -webkit-transition: opacity 1.5s ease-out;
+      transition: opacity 1.5s ease-out;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner {
+      color: #fff;
+      background-color: #f9fafc;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner--bg-image {
+      min-height: 730px;
+      padding: 45px 20px 0 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner__title {
+      max-width: 640px;
+      font-size: 5em;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+      position: relative;
+      color: #fff;
+      line-height: 1em;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner__title:after {
+      content: "";
+      display: inline-block;
+      width: 77px;
+      height: 2px;
+      background-color: #ff565c;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner__description {
+      max-width: 786px;
+      font-family: "Lato", Verdana, Arial, sans-serif;
+      font-size: 24px;
+      margin: 0;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding-bottom: 56px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__item {
+      width: 16.666666%;
+      max-width: 178px;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__item:hover {
+      -webkit-box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.2);
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 350ms;
+      transition-duration: 350ms;
+      -webkit-transition-timing-function: ease;
+      transition-timing-function: ease;
+      -webkit-transition-delay: initial;
+      transition-delay: initial;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__item:hover .ebb-18-banner-list__explore {
+      opacity: 1;
+      -webkit-transition: .5s;
+      transition: .5s;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__link {
+      color: #fff;
+      background-repeat: no-repeat;
+      padding: 16px;
+      text-transform: uppercase;
+      font-weight: 500;
+      min-height: 316px;
+      position: relative;
+      margin: 3px;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__company-name {
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: 2px;
+      padding-bottom: 4px;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__title {
+      display: inline-block;
+      font-size: 20px;
+      line-height: 1.25;
+      margin: 0;
+    }
+  
+    .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__explore {
+      display: inline-block;
+      color: #ff565c;
+      font-weight: 600;
+      letter-spacing: 1px;
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      padding-bottom: 15px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      opacity: 0;
+    }
+  
+    .ebb-18-gold-spots {
+      padding-bottom: 1em;
+      background-color: #f9fafc;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-top: 56px;
+      margin-bottom: 72px;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-row .ebb-18-gold-spot-text {
+      padding-right: 50px;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-row:nth-of-type(even) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-row:nth-of-type(even) .ebb-18-gold-spot-text {
+      padding-right: 0;
+      padding-left: 70px;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-text {
+      width: 50%;
+      color: #1d1f24;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-text__logo {
+      width: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-bottom: 2px solid #ff565c;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-text__title {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 32px 0 24px;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-text__description,
+    .ebb-18-gold-spots .ebb-18-gold-spot-text__offers {
+      display: inline-block;
+      font-family: "Lato", Verdana, Arial, sans-serif;
+      line-height: 1.5;
+      color: #1d1f24;
+      opacity: 0.7;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-text__description {
+      margin-bottom: 40px;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-text__offers {
+      font-weight: 600;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-text__button {
+      display: inline-block;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #ff565c;
+      text-transform: uppercase;
+      padding: 16px 72px;
+      border: 2px solid #ff565c;
+      margin-top: 16px;
+      margin-bottom: 31px;
+      -webkit-transition: .5s;
+      transition: .5s;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-text__button:hover {
+      background-color: #ff565c;
+      color: #fff;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-exposition {
+      -webkit-box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.3);
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide {
+      background-color: #000000;
+      background-position: center;
+      background-size: cover;
+      padding: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__headline {
+      position: relative;
+      z-index: 1;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__slide-number {
+      font-size: 120px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: -2px;
+      color: rgba(225, 225, 225, 0.2);
+      position: absolute;
+      top: -62px;
+      left: -32px;
+      z-index: -1;
+      margin-top: 20px;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__title {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: #ff565c;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__subtitle {
+      font-family: "Lato", Verdana, Arial, sans-serif;
+      font-size: 32px;
+      line-height: 1.25;
+      color: #fff;
+      margin: 10px 0 16px;
+    }
+  
+    .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide p {
+      font-family: "Lato", Verdana, Arial, sans-serif;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.5;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots {
+      background-color: #f9fafc;
+      padding-bottom: 2em;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots__header {
+      border-top: 1px solid rgba(128, 151, 177, 0.4);
+      padding-top: 25px;
+      margin-bottom: 48px;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots__section-title {
+      font-size: 42px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots__item {
+      -ms-flex-preferred-size: calc(50% - 1em);
+      flex-basis: calc(50% - 1em);
+      padding: 24px 24px 30px;
+      background-color: #fff;
+      -webkit-box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.1);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: .4em;
+      max-width: 583px;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots__headline {
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding: 14px 0;
+      margin-bottom: 16px;
+    }
+  
+    .ebb-18-silver-spots__1st {
+      display: inline-block;
+      width: 18%;
+    }
+  
+    .ebb-18-silver-spots__2nd {
+      display: inline-block;
+      width: 80%;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots__title {
+      color: #ff565c;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      line-height: 19px;
+      margin-bottom: 0;
+      display: inline-block;
+      padding-left: 10px;
+    }
+  
+    .ebb-18-silver-spots__headline img {
+      width: 100%;
+      display: inline-block;
+      max-width: 50px;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots__subtitle {
+      font-family: "Lato", Verdana, Arial, sans-serif;
+      font-size: 32px;
+      line-height: 1.25;
+      letter-spacing: normal;
+      color: #1d1f24;
+      margin-bottom: 24px;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots__description-list {
+      padding-left: 65px;
+      list-style: none;
+      margin-bottom: 16px;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots__description-item {
+      font-family: "Lato", Verdana, Arial, sans-serif;
+      color: rgba(29, 31, 36, 0.4);
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      position: relative;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots__description-item:before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #ff565c;
+      position: absolute;
+      left: -26px;
+      top: 10px;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spots__partners-title {
+      font-family: "Lato", Verdana, Arial, sans-serif;
+      color: rgba(29, 31, 36, 0.7);
+      font-size: 16px;
+      font-weight: 600;
+      border-top: 1px solid #e9e9e9;
+      padding-top: 12px;
+      margin-bottom: 24px;
+      margin-top: auto;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spot-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spot-action {
+      width: 25%;
+      padding: 0 5px;
+      text-align: center;
+      cursor: pointer;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spot-action:hover .ebb-18-silver-spot-logo {
+      opacity: 1;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spot-action:hover .ebb-18-silver-spot-values {
+      border-color: #ff565c;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spot-logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spot-logo img {
+      opacity: 0.5;
+    }
+  
+    .ebb-18-main-container .ebb-18-silver-spot-values {
+      display: inline-block;
+      color: #ff565c;
+      padding-bottom: 1px;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: .7s;
+      transition: .7s;
+      margin-top: 20px;
+      font-size: .9em;
+    }
+  
+    .ebb-18-main-container {
+      font-family: "Oswald", Verdana, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.3;
+      margin-bottom: 40px;
+    }
+  
+    .ebb-18-vouchertitle {
+      border-top: 1px solid rgba(128, 151, 177, .4);
+      padding-top: 25px;
+      margin-bottom: 48px;
+      padding-right: 4em;
+      padding-left: 2em;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .ebb-18-vouchertitle h2 {
+      font-size: 42px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  
+    @media screen and (max-width: 1280px) {
+      .ebb-18-main-container .ebb-18-small-container {
+        padding-right: 40px;
+        padding-left: 10px;
+      }
+    }
+  
+    @media screen and (max-width: 1200px) {
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner__title {
+        font-size: 76px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list {
+        padding-bottom: 44px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-row {
+        margin-bottom: 50px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__section-title {
+        font-size: 40px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__subtitle {
+        font-size: 30px;
+      }
+    }
+  
+    @media screen and (max-width: 1190px) {
+      .ebb-18-banner .ebb-18-ebb-18-banner-slider {
+        width: 376px;
+        margin: -217px 25px 0 auto;
+      }
+  
+      .ebb-18-banner .ebb-18-ebb-18-banner-slider input,
+      .ebb-18-banner .ebb-18-ebb-18-banner-slider .ebb-18-banner-switch {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+  
+      .ebb-18-banner .ebb-18-animation-wrap {
+        -webkit-animation: cardMove 21s ease-out infinite;
+        animation: cardMove 21s ease-out infinite;
+      }
+  
+      .ebb-18-banner #ebb-18-btn-1b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-banner-ebb-18-slides {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      .ebb-18-banner #ebb-18-btn-2b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-banner-ebb-18-slides {
+        -webkit-transform: translateX(-376px);
+        transform: translateX(-376px);
+      }
+  
+      .ebb-18-banner #ebb-18-btn-3b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-banner-ebb-18-slides {
+        -webkit-transform: translateX(-752px);
+        transform: translateX(-752px);
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__item {
+        width: 188px;
+        max-width: 188px;
+        padding: 0 5px;
+        margin: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__explore {
+        opacity: 1;
+      }
+    }
+  
+    @media screen and (max-width: 1100px) {
+      .ebb-18-gold-spots .ebb-18-gold-spot-row .ebb-18-gold-spot-exposition {
+        margin-left: 40px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-row:nth-of-type(even) .ebb-18-gold-spot-exposition {
+        margin-right: 40px;
+        margin-left: 0;
+      }
+    }
+  
+    @media screen and (max-width: 1024px) {
+      .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__subtitle {
+        font-size: 30px;
+      }
+    }
+  
+    @media screen and (max-width: 992px) {
+      .ebb-18-gold-spot-exposition {
+        width: 100%;
+        max-width: 685px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-text {
+        width: 100%;
+      }
+  
+      .ebb-18-banner .ebb-18-banner-switch {
+        bottom: -36px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner--bg-image {
+        min-height: 700px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner--bg-image {
+        padding-top: 100px;
+        min-height: 670px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner__title {
+        font-size: 70px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list {
+        padding-bottom: 0;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-row .ebb-18-gold-spot-exposition {
+        margin-left: 0;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-row .ebb-18-gold-spot-text {
+        padding-right: 0;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-row:nth-of-type(even) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-row:nth-of-type(even) .ebb-18-gold-spot-exposition {
+        margin-right: 0;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-row:nth-of-type(even) .ebb-18-gold-spot-text {
+        padding-left: 0;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-text {
+        max-width: 685px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-text__title {
+        font-size: 50px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-text__button {
+        padding: 14px 60px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__subtitle {
+        font-size: 28px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__section-title {
+        font-size: 36px;
+        text-align: center;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__item:nth-of-type(odd) {
+        margin-right: auto;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__item {
+        display: block;
+        max-width: 583px;
+        margin: 0 auto 40px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__subtitle {
+        font-size: 28px;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner--bg-image {
+        padding-top: 70px;
+        min-height: 600px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner__title {
+        font-size: 64px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner__description {
+        font-size: 18px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-text__title {
+        font-size: 46px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__slide-number {
+        font-size: 110px;
+        top: -56px;
+        left: -28px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__section-title {
+        font-size: 34px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__subtitle {
+        font-size: 26px;
+      }
+    }
+  
+    @media screen and (max-width: 640px) {
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner--bg-image {
+        padding-top: 50px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner__title {
+        font-size: 48px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-text__title {
+        font-size: 42px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide {
+        padding: 30px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__slide-number {
+        font-size: 100px;
+        top: -56px;
+        left: -28px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__subtitle {
+        font-size: 26px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide p {
+        font-size: 14px;
+        line-height: 1.3;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__section-title {
+        font-size: 32px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__subtitle {
+        font-size: 24px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__description-list {
+        padding-left: 35px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spot-values {
+        font-size: 14px;
+      }
+    }
+  
+    @media screen and (max-width: 500px) {
+      .ebb-18-main-container .ebb-18-silver-spots__item {
+        padding-bottom: 10px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__partners-title {
+        text-align: center;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spot-action {
+        width: 50%;
+        max-width: 148px;
+        margin-bottom: 20px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spot-values {
+        margin-top: 5px;
+      }
+    }
+  
+    @media screen and (max-width: 440px) {
+      .ebb-18-banner .ebb-18-ebb-18-banner-slider {
+        margin: -190px auto 0 auto;
+      }
+    }
+  
+    @media screen and (max-width: 400px) {
+      .ebb-18-banner .ebb-18-ebb-18-banner-slider {
+        width: 320px;
+      }
+  
+      .ebb-18-banner .ebb-18-animation-wrap {
+        -webkit-animation: smallCardMove 21s ease-out infinite;
+        animation: smallCardMove 21s ease-out infinite;
+      }
+  
+      .ebb-18-banner #ebb-18-btn-1b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-banner-ebb-18-slides {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      .ebb-18-banner #ebb-18-btn-2b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-banner-ebb-18-slides {
+        -webkit-transform: translateX(-320px);
+        transform: translateX(-320px);
+      }
+  
+      .ebb-18-banner #ebb-18-btn-3b:checked~.ebb-18-ebb-18-banner-ebb-18-slider-inner .ebb-18-banner-ebb-18-slides {
+        -webkit-transform: translateX(-640px);
+        transform: translateX(-640px);
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner--bg-image {
+        padding-top: 32px;
+        min-height: 580px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__item {
+        width: 160px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__link {
+        min-height: 260px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__title {
+        font-size: 20px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner-list__explore {
+        font-size: 14px;
+      }
+    }
+  
+    @media screen and (max-width: 380px) {
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner__title {
+        font-size: 42px;
+      }
+  
+      .ebb-18-main-container .ebb-18-banner .ebb-18-banner__description {
+        font-size: 20px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-text__title {
+        font-size: 32px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-text__description,
+      .ebb-18-gold-spots .ebb-18-gold-spot-text__offers {
+        font-size: 14px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide {
+        padding: 15px;
+      }
+  
+      .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__slide-number {
+        font-size: 90px;
+        top: -51px;
+        left: -22px;
+        color: rgba(225, 225, 225, 0.4);
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__section-title {
+        font-size: 30px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__subtitle {
+        font-size: 22px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__description-list {
+        padding-left: 25px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__partners-title {
+        margin-bottom: 10px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spot-action {
+        padding: 0 10px;
+      }
+    }
+  
+    @media screen and (max-width: 340px) {
+      .ebb-18-gold-spots .ebb-18-gold-spot-exposition .ebb-18-gold-spot-exposition-slide__slide-number {
+        font-size: 80px;
+        top: -34px;
+        left: -20px;
+      }
+    }
+  
+    @media screen and (max-width: 320px) {
+      .ebb-18-gold-spots .ebb-18-gold-spot-text__button {
+        padding: 12px 46px;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__description-item {
+        font-size: 14px;
+        line-height: 1.3;
+      }
+  
+      .ebb-18-main-container .ebb-18-silver-spots__description-item:before {
+        width: 6px;
+        height: 6px;
+        left: -20px;
+        top: 6px;
+      }
+    }
+  </style>
+  <!-- Main container start -->
+  <div class="ebb-18-main-container">
+    <!-- Header starts -->
+    <div class="ebb-18-banner">
+      <!-- Header bg image start -->
+      <div class="ebb-18-banner--bg-image" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/h/HomeOutdoorHeader3.jpg)">
+        <div class="ebb-18-small-container">
+          <!-- Header title start, be short: 35 characters max -->
+          <h1 class="ebb-18-banner__title"> Home &amp; Outdoor Angebote </h1>
+          <!-- Header title end -->
+          <!-- Header description starts, 200 characters max -->
+          <p class="ebb-18-banner__description">Die schönste Zeit des Jahres mit den besten Rabatten genießen und so richtig aufblühen. Entdecken Sie günstige Garten- und Balkonmöbel, Dekoartikel, Lampen, Pflanzen und mehr!</p>
+          <!-- Header description ends -->
+        </div>
+      </div>
+      <!-- Header bg image end -->
+      <!-- Header Cards start -->
+      <div class="ebb-18-ebb-18-banner-slider">
+        <!-- Don't touch, buttons -->
+        <!-- radio-buttons and labels for cards slider for responsive  start-->
+        <input type="radio" name="ebb-18-banner-switch" id="ebb-18-btn-1b" class="ebb-18-radio-slide">
+        <input type="radio" name="ebb-18-banner-switch" id="ebb-18-btn-2b" class="ebb-18-radio-slide">
+        <input type="radio" name="ebb-18-banner-switch" id="ebb-18-btn-3b" class="ebb-18-radio-slide">
+        <div class="ebb-18-banner-switch">
+          <label for="ebb-18-btn-1b">&nbsp;</label>
+          <label for="ebb-18-btn-2b">&nbsp;</label>
+          <label for="ebb-18-btn-3b">&nbsp;</label>
+        </div>
+        <!-- .slider-prev-next-control -->
+        <!-- radio-buttons and labels for cards slider for responsive end-->
+        <!-- Header Card list start -->
+        <div class="ebb-18-ebb-18-banner-ebb-18-slider-inner">
+          <div class="ebb-18-animation-wrap">
+            <div class="ebb-18-banner-ebb-18-slides ebb-18-banner-list">
+              <!-- Header Card 1 start -->
+              <div class="ebb-18-banner-slide ebb-18-banner-list__item">
+                <!-- Don't change link, it's connected to the section. But change logo, alt text and text -->
+                <a href="#ebb18_section1" class="ebb-18-banner-list__link" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/7/7534112_500x600px.jpg)">
+                  <!-- Brand Name --><span class="ebb-18-banner-list__company-name">Lampenwelt</span>
+                  <!-- Short Title --><span class="ebb-18-banner-list__title">Innen- und Außenleuchten </span>
+                  <!-- Use arrow image and keep the CTA in one word --><span class="ebb-18-banner-list__explore" style="background-image: url(https://d3tsytm1wtjqo2.cloudfront.net/images/media/163/e/ebb18ion-ios-arrow.png)">Jetzt entdecken</span>
+                </a>
+              </div>
+              <!-- Header Card 1 End -->
+              <!-- Header Card 2 start -->
+              <div class="ebb-18-banner-slide ebb-18-banner-list__item">
+                <!-- Don't change link, it's connected to the section. But change logo, alt text and text -->
+                <a href="#ebb18_section2" class="ebb-18-banner-list__link" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/h/home24500x600.jpg)">
+                  <!-- Brand Name --><span class="ebb-18-banner-list__company-name">Home24</span>
+                  <!-- Short Title --><span class="ebb-18-banner-list__title">Balkonmöbel und mehr</span>
+                  <!-- Use arrow image and keep the CTA in one word --><span class="ebb-18-banner-list__explore" style="background-image: url(https://d3tsytm1wtjqo2.cloudfront.net/images/media/163/e/ebb18ion-ios-arrow.png)">Jetzt entdecken</span>
+                </a>
+              </div>
+              <!-- Header Card 2 End -->
+              <!-- Header Card 3 start -->
+              <div class="ebb-18-banner-slide ebb-18-banner-list__item">
+                <!-- Don't change link, it's connected to the section. But change logo, alt text and text -->
+                <a href="#ebb18_section3" class="ebb-18-banner-list__link" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/q/quelle500x600.jpg)">
+                  <!-- Brand Name --><span class="ebb-18-banner-list__company-name">Quelle</span>
+                  <!-- Short Title --><span class="ebb-18-banner-list__title">Garten und Baumarkt</span>
+                  <!-- Use arrow image and keep the CTA in one word --><span class="ebb-18-banner-list__explore" style="background-image: url(https://d3tsytm1wtjqo2.cloudfront.net/images/media/163/e/ebb18ion-ios-arrow.png)">Jetzt entdecken</span>
+                </a>
+              </div>
+              <!-- Header Card 3 End -->
+              <!-- Header Card 4 start -->
+              <div class="ebb-18-banner-slide ebb-18-banner-list__item">
+                <!-- Don't change link, it's connected to the section. But change logo, alt text and text -->
+                <a href="#ebb18_section4" class="ebb-18-banner-list__link" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/m/made_500x600_5.png)">
+                  <!-- Brand Name --><span class="ebb-18-banner-list__company-name">Made.com</span>
+                  <!-- Short Title --><span class="ebb-18-banner-list__title">Stilvolle Möbel</span>
+                  <!-- Use arrow image and keep the CTA in one word --><span class="ebb-18-banner-list__explore" style="background-image: url(https://d3tsytm1wtjqo2.cloudfront.net/images/media/163/e/ebb18ion-ios-arrow.png)">Jetzt entdecken</span>
+                </a>
+              </div>
+              <!-- Header Card 4 End -->
+              <!-- Header Card 5 start -->
+              <div class="ebb-18-banner-slide ebb-18-banner-list__item">
+                <!-- Don't change link, it's connected to the section. But change logo, alt text and text -->
+                <a href="#ebb18_section5" class="ebb-18-banner-list__link" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/5/500x600OBI05.jpg)">
+                  <!-- Brand Name --><span class="ebb-18-banner-list__company-name">OBI</span>
+                  <!-- Short Title --><span class="ebb-18-banner-list__title">Haus und Garten</span>
+                  <!-- Use arrow image and keep the CTA in one word --><span class="ebb-18-banner-list__explore" style="background-image: url(https://d3tsytm1wtjqo2.cloudfront.net/images/media/163/e/ebb18ion-ios-arrow.png)">Jetzt entdecken</span>
+                </a>
+              </div>
+              <!-- Header Card 5 End -->
+              <!-- Header Card 6 start -->
+              <div class="ebb-18-banner-slide ebb-18-banner-list__item">
+                <!-- Don't change link, it's connected to the section. But change logo, alt text and text -->
+                <a href="#ebb18_section6" class="ebb-18-banner-list__link" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/5/500x600_Strau--_03.jpg)">
+                  <!-- Brand Name --><span class="ebb-18-banner-list__company-name">Blume2000</span>
+                  <!-- Short Title --><span class="ebb-18-banner-list__title">Frische Sommerblumen</span>
+                  <!-- Use arrow image and keep the CTA in one word --><span class="ebb-18-banner-list__explore" style="background-image: url(https://d3tsytm1wtjqo2.cloudfront.net/images/media/163/e/ebb18ion-ios-arrow.png)">Jetzt entdecken</span>
+                </a>
+              </div>
+              <!-- Header Card 6 End -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header Cards End -->
+    </div>
+    <!-- Header ends -->
+    <!-- Gold section start -->
+    <section class="ebb-18-section ebb-18-gold-spots">
+      <!-- Gold section spots start -->
+      <div class="ebb-18-small-container">
+        <!-- Gold section 1 spots row start -->
+        <div class="ebb-18-gold-spot-row" id="ebb18_section1">
+          <!-- Text column starts -->
+          <div class="ebb-18-gold-spot-text">
+            <!-- Logo image and alt text --><span class="ebb-18-gold-spot-text__logo"> <img src="https://dv7wq5l05r9b8.cloudfront.net/images/l/lampenwelt_9.png" alt="alttext" class="ebb-18-main-logogold"> </span>
+            <!-- Title, keep it short -->
+            <h2 class="ebb-18-gold-spot-text__title">Ihr Zuhause in neuem Licht</h2>
+            <!-- Description -->
+            <p class="ebb-18-gold-spot-text__description">Bringen Sie Licht ins Dunkel mit trendigen Außen- und Innenleuchten. Laue Sommernächte laden dazu ein, den Abend auf dem Balkon oder im Garten zu verbringen - mit dem richtigen Licht sorgen Sie für eine romantische Stimmung.</p>
+            <!-- CTA. Use a line of text referring to the brand. What is the retailer offering related to the destination promoted? -->
+            <p class="ebb-18-gold-spot-text__offers">Lampenwelt bietet Ihnen die besten Angebote für Ihre neuen Außen- und Innenleuchten.</p>
+            <!-- Link to RLP --><a href="https://gutscheine.focus.de/gutscheine/lampenwelt" class="ebb-18-gold-spot-text__button see-button">Alle Angebote entdecken</a>
+          </div>
+          <!-- Text column ends -->
+          <!-- Inspiration column with slider starts -->
+          <div class="ebb-18-gold-spot-exposition">
+            <!-- radio-buttons and labels for slider for responsive  start-->
+            <div class="ebb-18-gold-spot-exposition__slider slider">
+              <input type="radio" name="switch" id="ebb-18-btn1">
+              <input type="radio" name="switch" id="ebb-18-btn2">
+              <input type="radio" name="switch" id="ebb-18-btn3">
+              <div class="ebb-18-gold-spot-exposition__switch">
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn1">1</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn2">2</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn3">3</label>
+              </div>
+              <!-- radio-buttons and labels for slider for responsive end-->
+              <div class="ebb-18-slider-inner">
+                <!--Slides start -->
+                <div class="ebb-18-slides">
+                  <!--First slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/7/7534112_500x600px.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">01</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Terrassenlampen</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Die perfekte Außenbeleuchtung</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Um gemütliche Sommernächte in Ihrem Garten genießen zu können, benötigen Sie die richtige Außenbeleuchtung.
+                      <br>
+                      <br>Lassen Sie Ihren Garten, Terasse oder Balkon in neuem Licht erstrahlen. Was gibt es schöneres als im Sommer die langen Nächte im Freien zu verbringen? Sie möchten aber natürlich nicht im Dunkeln sitzen, daher sollten Sie sich unbedingt die perfekte Außenleuchte für Ihr Zuhause kaufen. Die Auswahl an Außenbeleuchtung ist groß, Sie haben die Wahl zwischen Wandleuchten, Solarleuchten, Außenstrahlern, Designerleuchten und vielen mehr.
+                      <br>
+                      <br>Jetzt liegt es an Ihnen die perfekte Lampe für Ihren Garten zu finden!
+                    </p>
+                  </section>
+                  <!--First slide end -->
+                  <!-- Second slide starts -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide2" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/9/9521076_500x600px.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">02</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Innenleuchten</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Ihr Zuhause in Szene setzen</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Mit der richtigen Lampe erstrahlt Ihr Zuhause gleich in einem ganz anderen Licht. Egal ob Deckenleuchten, Wandleuchten, Hängeleuchten, Stehlampen oder Schienensysteme.
+                      <br>
+                      <br>Designer aus der ganzen Welt gestalten jedes Jahr aufs Neue modernste Lampen, die Sie für Ihr Zuhause nutzen können, um auch Ihre Wohnung oder Ihr Haus in einem neuen Licht erscheinen zu lassen. Nutzen Sie diesen Sommer, um sich die besten und neuesten Inspirationen für Ihr Eigenheim zu holen.
+                      <br>
+                      <br>Finden Sie die perfekte Lampe für Ihr Zuhause und genießen Sie bei gemütlichem Licht Ihre langen Sommerabende.
+                    </p>
+                  </section>
+                  <!-- Second slide ends -->
+                  <!-- Third slide starts -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide3" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/l/Lampenweldgold.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">03</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Wandleuchten</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Indirekte Akzente setzen</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Lassen Sie durch indirekte Akzente Ihr Eigenheim in einem ganz neuen Licht erstrahlen. Eine Wandleuchte kann hier eine wunderbare Alternative bieten, um Ihr Zuhause in ein Stimmungsvolles Bild zu tauchen.
+                      <br>
+                      <br>Wandleuchten sind die perfekt Idee, um durch indirekte Beleuchtung Ihr Zuhause perfekt zu erhellen. Sie schaffen eine gemütliche Atmosphäre und lassen sich vor allem in Ihrem Gang gut anbringen, aber auch für Ihre Außenbeleuchtung bieten sie eine tolle Alternative. Die perfekte Lampe zu finden kann mit diesen Produkten ganz einfach werden.
+                      <br>
+                      <br>Lassen Sie sich diesen Sommer die Gelegenheit nicht entgehen und holen Sie sich jetzt ein tolles Wohnaccessoire, das Ihnen Freude bereitet.
+                    </p>
+                  </section>
+                  <!-- Third slide ends -->
+                </div>
+                <!--ebb-18-slides end -->
+              </div>
+            </div>
+          </div>
+          <!-- Inspiration column with slider ends -->
+        </div>
+        <!-- Gold section 1 spots row end -->
+        <!-- Gold section 2 spots row start -->
+        <div class="ebb-18-gold-spot-row" id="ebb18_section2">
+          <!-- Gold section spots item start -->
+          <!-- Text column starts -->
+          <div class="ebb-18-gold-spot-text">
+            <!-- Logo image and alt text --><span class="ebb-18-gold-spot-text__logo"> <img src="https://dv7wq5l05r9b8.cloudfront.net/160x/images/h/home24_9.png" alt="home24 Logo" class="ebb-18-main-logogold"> </span>
+            <!-- Title, keep it short -->
+            <h2 class="ebb-18-gold-spot-text__title">Frischer Wind für Ihr Zuhause</h2>
+            <!-- Description --><span class="ebb-18-gold-spot-text__description">Lassen Sie Ihr Zuhause neu aufblühen mit erfrischenden Designs für Garten und Wohnraum. Entdecken Sie die neuesten Trends und lassen Sie sich inspirieren, um Ihren perönlichen Stil zu finden.</span>
+            <!-- CTA. Use a line of text referring to the brand. What is the retailer offering related to the destination promoted? --><span class="ebb-18-gold-spot-text__offers"> Home24 hält die besten Produkte für Sie bereit - ganz einfach online bestellen.</span>
+            <!-- Link to RLP --><a href="https://gutscheine.focus.de/gutscheine/home24" class="ebb-18-gold-spot-text__button see-button">Alle Angebote entdecken</a>
+          </div>
+          <!-- Text column wnds -->
+          <!-- Inspiration column with slider starts -->
+          <div class="ebb-18-gold-spot-exposition">
+            <!-- radio-buttons and labels for slider for responsive start-->
+            <div class="ebb-18-gold-spot-exposition__slider slider">
+              <input type="radio" name="second-switch" id="ebb-18-btn4">
+              <input type="radio" name="second-switch" id="ebb-18-btn5">
+              <input type="radio" name="second-switch" id="ebb-18-btn6">
+              <div class="ebb-18-gold-spot-exposition__second-switch">
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn4">1</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn5">2</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn6">3</label>
+              </div>
+              <!-- radio-buttons and labels for slider for responsive end-->
+              <div class="ebb-18-slider-inner">
+                <!--ebb-18-slides start -->
+                <div class="ebb-18-slides">
+                  <!--First slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/h/home24500x600.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">01</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Trendige Möbel</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Neues Design, neues Glück</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Sie möchten sich diesen Sommer zu Hause so richtig wohlfühlen? Dann investieren Sie in neue Möbel sowohl für Ihren Wohnraum, als auch für Ihren Garten oder Balkon. Wir empfehlen insbesondere Holzmöbel, um Ihrem Eigenheim eine gemütliche Atmosphäre zu verleihen.
+                      <br>
+                      <br>Lassen Sie sich von aktuellen Wohntrends inspirieren und finden Sie beispielsweise gemütliche Loungemöbel aus Rattan für Ihre Terrasse, eine schicke Außen- oder Innenbeleuchtung, Gartenaccessoires, Sonnenschutz und noch mehr.
+                      <br>
+                      <br>Diesen Sommer ist vor allem der nordische Stil im Trend, bedeutet es wird viel auf Natürlichkeit gesetzt. Gestalten Sie Ihre Wolffühl-Oase und genießen Sie den Sommer in vollen Zügen.
+                    </p>
+                  </section>
+                  <!--First slide ends -->
+                  <!--Second slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide2" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/h/home24500x600.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">02</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Gartenparty</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Frischer Duft in Ihrem Garten</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Wenn der Grillduft in Ihre Nase steigt, ist es Zeit den Garten wieder aufleben zu lassen. Schöne Sommerabende mit Freunden im Garten mit neuen Gartenmöbeln zu genießen erfreut Jedermann.
+                      <br>
+                      <br>Grillabende sind der schönste Grund, um im Sommer mit Freunden das gute Wetter draußen zu genießen. Loungemöbel schaffen eine gemütliche Atmosphäre und laden dazu ein einfach mal abzuschalten und zu entspannen. Wenn Ihr Balkon zu klein ist, um sich ein großes Set zu kaufen, finden Sie auch eine unzählige Auswahl an Balkonmöbeln, die für jeden Balkon gemacht sind.
+                      <br>
+                      <br>Unser Tipp für Sie: Schlagen Sie am besten schnell zu, damit Sie noch die volle Auswahl an Möbeln zur Verfügung haben.
+                    </p>
+                  </section>
+                  <!--Second slide end -->
+                  <!--Third slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide3" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/h/home24500x600.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">03</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Gartenaccessoires</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Trendige neue Raumgestaltung</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Accessoires schenken Ihrem Zuhause das gewissen etwas. Bilder, Pölster, Teppiche und vieles mehr, kann frischen Wind in Ihre vier Wände bringen - ganz einfach und ohne großen Aufwand.
+                      <br>
+                      <br>Mit frischen sommerlichen Farben verwandlen Sie Ihr Zuhause in eine Wohlfühl-Oase. Auch sommerliche Accessoires bringen Sie in Stimmung und lassen den Sommer bei Ihnen im Garten einkehren. Das beste daran ist, dass Accessoires nicht viel Platz wegnehmen und auch auf kleinerem Raum eine tolle Wirkung erzeugen.
+                      <br>
+                      <br>Von Lampen über Teppiche, Bilder, Figuren bis hin zu Übertöpfen - läuten Sie den Sommer bei Ihnen zu Hause ein!
+                    </p>
+                  </section>
+                  <!--Third slide end -->
+                </div>
+                <!--ebb-18-slides End -->
+              </div>
+            </div>
+          </div>
+          <!-- Inspiration column with slider ends -->
+        </div>
+        <!-- Gold section 2 spots row end -->
+        <!-- Gold section 3 spots row start -->
+        <div class="ebb-18-gold-spot-row" id="ebb18_section3">
+          <!-- Gold section spots item start -->
+          <!-- Text column starts -->
+          <div class="ebb-18-gold-spot-text">
+            <!-- Logo image and alt text --><span class="ebb-18-gold-spot-text__logo"> <img src="https://dv7wq5l05r9b8.cloudfront.net/160x/images/q/Quelle_Logo_9.png" alt="Quelle Logo" class="ebb-18-main-logogold"> </span>
+            <!-- Title, keep it short -->
+            <h2 class="ebb-18-gold-spot-text__title">Gartenparadies</h2>
+            <!-- Description -->
+            <p class="ebb-18-gold-spot-text__description">Gestalten Sie Ihren Garten mit tollen Produkten aus der Kategorie Garten und Baumarkt um. Quelle bietet Ihnen eine Vielzahl an Gartenartikeln, die Ihnen ermöglichen den Sommer zu Hause so richtig zu genießen. Schaffen Sie ein Paradies für die ganze Familie!</p>
+            <!-- CTA. Use a line of text referring to the brand. What is the retailer offering related to the destination promoted? -->
+            <p class="ebb-18-gold-spot-text__offers">Bei Quelle finden Sie alles rund um Ihren Garten. Seien es Gartengeräte, Gartendekoration, Gartenmöbel, Grills und sogar Pools! Sparen Sie mit unseren Quelle Gutscheinen auf Ihren Gartentraum.</p>
+            <!-- Link to RLP --><a href="https://gutscheine.focus.de/gutscheine/quelle" class="ebb-18-gold-spot-text__button see-button">Alle Angebote entdecken</a>
+          </div>
+          <!-- Text column ends -->
+          <!-- Inspiration column with slider starts -->
+          <div class="ebb-18-gold-spot-exposition">
+            <!-- radio-buttons and labels for slider for responsive  start-->
+            <div class="ebb-18-gold-spot-exposition__slider slider">
+              <input type="radio" name="third-switch" id="ebb-18-btn3-1">
+              <input type="radio" name="third-switch" id="ebb-18-btn3-2">
+              <input type="radio" name="third-switch" id="ebb-18-btn3-3">
+              <div class="ebb-18-gold-spot-exposition__switch">
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn3-1">1</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn3-2">2</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn3-3">3</label>
+              </div>
+              <!-- radio-buttons and labels for slider for responsive end-->
+              <div class="ebb-18-slider-inner">
+                <!--ebb-18-slides start -->
+                <div class="ebb-18-slides">
+                  <!--First slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/c/cuponation_garten1_500x600.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">01</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Garten und Baumarkt</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Wer hat Lust auf Grillen?</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Gutes Wetter, gute Laune, gutes Essen! Zu einem leckeren Barbecue hat noch niemand "nein" gesagt. Finden Sie den perfekten Grill für Ihr Zuhause und schon kann die Gartenparty losgehen.
+                      <br>
+                      <br>Im Sommer gehört Grillen einfach dazu. Egal ob unter der Woche mit der Familie oder am Wochenende mit Freunden. Köstliches Essen ist vorprogrammiert - einfach Fleisch, Fisch und Gemüse auf den Grill geben und dazu noch schmackhafte Salate vorbereiten, schon haben Sie ein vollwertiges Menü ganz einfach zubereitet.
+                      <br>
+                      <br>Welcher Grill ist der richtige für Sie? Sie haben die Qual der Wahl zwischen dem klassichen Holzkohlegrill, der Ihrem Fleisch ein rauchiges Aroma verleiht, oder vielleicht stehen Sie doch lieber auf Gasgrills - hier wird auf einfache Bedienung und viel Platz gesetzt. Auch Elektrogrills sind angesagt, vor allem für Ihren Balkon eignet sich ein Elektrogrill perfekt, er nimmt nicht viel Platz weg und Ihr Nachbar hat keine Rauchwolke im Gesicht. Das Ergebnis kann sich trotzdem sehen lassen!
+                    </p>
+                  </section>
+                  <!--First slide end -->
+                  <!-- Second slide starts -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide2" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/c/cuponation_garten2_500x600.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">02</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Garten und Baumarkt</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Wie wäre es mit einem Pool?</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Badespaß im eigenen Garten? Der Swimmingpool macht's möglich! Sie besitzen einen Garten und wissen nicht so Recht, ob es sich lohnt einen Pool anzuschaffen, dann haben wir die Lösung für Sie.
+                      <br>
+                      <br>Heiße Temperaturen treiben Menschenmengen in Freibäder. Warum nicht einfach das Freibad zu sich nach Hause holen? Es gibt unzählige Möglichkeiten einen Swimmingpool bei Ihnen im Garten aufzustellen und es ist noch nichtmal mit viel Arbeit verbunden. Schwimmbecken gibt es in vielen Ausführungen, somit ist für jeden Garten, egal ob groß oder klein und auch für jedes Budget das richtige dabei.
+                      <br>
+                      <br>Informieren Sie sich jetzt über verschiedene Modelle und finden Sie Ihren perfekten Badespaß für zu Hause!
+                    </p>
+                  </section>
+                  <!-- Second slide ends -->
+                  <!-- Third slide starts -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide3" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/c/cuponation_garten3_500x600.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">03</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Garten und Baumarkt</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Gartenmöbelsets für Ihr Zuhause</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Was darf im Sommer auf keinen Fall bei Ihnen Zuhause fehlen? Richtig, Gartenmöbel! Egal ob Balkon, Terrasse oder Garten. Gartenmöbelsets gibt es in verschiedenen Herstellungsarten. Holz und Rattan sind auch in diesem Sommer wieder die Topseller!
+                      <br>
+                      <br>Tanken Sie Ihren Vitamin D Gehalt auf und genießen Sie das schöne Wetter auf Ihrem Balkon oder Terrasse. Gemütliche Gartenmöbel sind ein absolutes Muss, um den Sommer auskosten zu können.
+                      <br>
+                      <br>Wie wäre es mit einem gemütlichen Loungeset, oder vielleicht ein Gartenmöbelset bestehend aus Stühlen und Tisch zum draußen Essen? Auch für den Balkon gibt es kleinere Ausführungen, worauf warten Sie noch?
+                    </p>Finden Sie die passenden Gartenmöbel für Ihr Zuhause und lassen Sie es sich die Sonne ins Gesicht scheinen!
+                  </section>
+                  <!-- Third slide ends -->
+                </div>
+                <!--ebb-18-slides end -->
+              </div>
+            </div>
+          </div>
+          <!-- Inspiration column with slider ends -->
+        </div>
+        <!-- Gold section 3 spots row end -->
+        <!-- Gold section 4 spots row start -->
+        <div class="ebb-18-gold-spot-row" id="ebb18_section4">
+          <!-- Gold section spots item start -->
+          <!-- Text column starts -->
+          <div class="ebb-18-gold-spot-text">
+            <!-- Logo image and alt text --><span class="ebb-18-gold-spot-text__logo"> <img src="https://dv7wq5l05r9b8.cloudfront.net/images/m/made1_9.png" alt="Made.com Logo" class="ebb-18-main-logogold"> </span>
+            <!-- Title, keep it short -->
+            <h2 class="ebb-18-gold-spot-text__title"> Alles für Outdoor Aktivitäten</h2>
+            <!-- Description --><span class="ebb-18-gold-spot-text__description">Shoppen Sie Designer Möbel und Accessoires für Ihr Zuhause! Mit farbenfrohen Textilien, einem schicken Sofa, trendigen Accessoires oder Gartenmöbeln kann der Sommer starten. </span>
+            <!-- CTA. Use a line of text referring to the brand. What is the retailer offering related to the destination promoted? --><span class="ebb-18-gold-spot-text__offers">Bringen Sie den Sommer in Ihre Wohnräume und sparen Sie mit unseren Made.com Angeboten! </span>
+            <!-- Link to RLP --><a href="https://gutscheine.focus.de/gutscheine/made-com" class="ebb-18-gold-spot-text__button see-button">Alle Angebot entdecken</a>
+          </div>
+          <!-- Text column wnds -->
+          <!-- Inspiration column with slider starts -->
+          <div class="ebb-18-gold-spot-exposition">
+            <!-- radio-buttons and labels for slider for responsive  start-->
+            <div class="ebb-18-gold-spot-exposition__slider slider">
+              <input type="radio" name="fourth-switch" id="ebb-18-btn4-1">
+              <input type="radio" name="fourth-switch" id="ebb-18-btn4-2">
+              <input type="radio" name="fourth-switch" id="ebb-18-btn4-3">
+              <div class="ebb-18-gold-spot-exposition__second-switch">
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn4-1">1</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn4-2">2</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn4-3">3</label>
+              </div>
+              <!-- radio-buttons and labels for slider for responsive end-->
+              <div class="ebb-18-slider-inner">
+                <!--ebb-18-slides start -->
+                <div class="ebb-18-slides">
+                  <!--First slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/m/made_500x600_5.png);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">01</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Designer Möbel</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Schickes für Ihre Wohnräume</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Lassen Sie den Sommer in Ihre Wohnräume! Werten Sie Ihr Zuhause mit frischen Farben und neuen Trends auf und fühlen Sie sich wie im Urlaub.
+                      <br>
+                      <br>Mit einem neuen Designer Sofa, einem Esstisch aus Massivholz oder farbenfrohen Accessoires frischen Sie Ihr Zuhause auf. Setzen Sie Akzente mit bunten Kissen oder genießen Sie Sommergerichte von neuem Geschirr. Im Sale können Sie auch von tollen Rabatten profitieren und bringen den Sommer günstig in Ihr Zuhause.
+                      <br>
+                      <br>
+                    </p>
+                  </section>
+                  <!--First slide ends -->
+                  <!--Second slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide2" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/m/made500x600_7.png);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">02</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Outdoor Möbel</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Gartenmöbel</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Was gibt es schöneres, als den Sommer im Freien zu verbringen und Sonne zu tanken. Bringen Sie Ihren Garten, Balkon, oder Ihre Terrasse mit Gartenmöbeln auf Vordermann und genießen Sie die warme Jahreszeit.
+                      <br>
+                      <br>Genießen Sie die Sonnenstrahlen auf einer Liege im Garten, oder entkommen Sie der Hektik der Stadt auf Ihrem Balkon. Für einen Erfolgreichen Grillabend dürfen Esstisch und Stühle nicht fehlen! Gestalten Sie Ihr eigenes Paradies und fühlen Sie sich wie im Urlaub!
+                      <br>
+                      <br>Gestalten Sie Ihre kleine Wohlfühloase ganz einfach und mit unseren Garten-Angeboten finden Sie garantiert die besten Preise.
+                    </p>
+                  </section>
+                  <!--Second slide end -->
+                  <!--Third slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide3" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/m/Made3.png);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">03</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Schlafzimmermöbel</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Sommerliches Schlafzimmer</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Der Winterschlaf ist längst vorbei und es ist an der Zeit Ihr Schlafzimmer in den Sommer zu bringen! Mit sommerlicher Bettwäsche, luftigen Vorhängen oder einem neuen Bett fühlt sich Ihr Schlafzimmer gleich ganz neu an. Mit farbenfrohen Kissen, frischer Deko und weicher Bettwäsche starten Sie frisch und ausgeruht in den nächsten Tag!
+                      <br>
+                      <br>Lassen Sie sich inspirieren und gestalten Sie Ihr Schlafzimmer nach Ihren Vorstellungen und neuen Wohntrends!
+                      <br>
+                      <br>
+                    </p>
+                  </section>
+                  <!--Third slide end -->
+                </div>
+                <!--ebb-18-slides end -->
+              </div>
+            </div>
+          </div>
+          <!-- Inspiration column with slider ends -->
+        </div>
+        <!-- Gold section 4 spots row ends -->
+        <!-- Gold section 5 spots row starts -->
+        <div class="ebb-18-gold-spot-row" id="ebb18_section5">
+          <!-- Gold section spots item start -->
+          <!-- Text column starts -->
+          <div class="ebb-18-gold-spot-text">
+            <!-- Logo image and alt text --><span class="ebb-18-gold-spot-text__logo"> <img src="https://dv7wq5l05r9b8.cloudfront.net/images/o/obi-gutscheincode_logo_9.png" alt="OBI Logo" class="ebb-18-main-logogold"> </span>
+            <!-- Title, keep it short -->
+            <h2 class="ebb-18-gold-spot-text__title">Heimwerker</h2>
+            <!-- Description -->
+            <p class="ebb-18-gold-spot-text__description">Heimwerker kommen bei OBI auf den vollen Genuss! Im Gartencenter finden Sie unzählige Artikel, die Ihren Garten verschönern. Sie möchten den Sommer in vollen Zügen auskosten? Dann bietet Ihnen OBI das perfekte Angebot an Geräten, Möbeln und Zubehör für Ihr Zuhause. Leben Sie Ihre handwerkliche Kreativität aus bringen Sie den Handwerker zum Vorschein.</p>
+            <!-- CTA. Use a line of text referring to the brand. What is the retailer offering related to the destination promoted? -->
+            <p class="ebb-18-gold-spot-text__offers">Sichern Sie sich die besten Angebote und OBI Gutscheine für Ihr Eigenheim und legen Sie direkt los!</p>
+            <!-- Link to RLP --><a href="https://gutscheine.focus.de/gutscheine/obi" class="ebb-18-gold-spot-text__button see-button">Alle Angebote entdecken</a>
+          </div>
+          <!-- Text column ends -->
+          <!-- Inspiration column with slider starts -->
+          <div class="ebb-18-gold-spot-exposition">
+            <!-- radio-buttons and labels for slider for responsive  start-->
+            <div class="ebb-18-gold-spot-exposition__slider slider">
+              <input type="radio" name="fifth-switch" id="ebb-18-btn5-1">
+              <input type="radio" name="fifth-switch" id="ebb-18-btn5-2">
+              <input type="radio" name="fifth-switch" id="ebb-18-btn5-3">
+              <div class="ebb-18-gold-spot-exposition__switch">
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn5-1">1</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn5-2">2</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn5-3">3</label>
+              </div>
+              <!-- radio-buttons and labels for slider for responsive end-->
+              <div class="ebb-18-slider-inner">
+                <!--ebb-18-slides start -->
+                <div class="ebb-18-slides">
+                  <!--First slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/5/500x600OBI04.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">01</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Terrasse, Garten und Balkon</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle"> Sonnenschutz</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>An warmen Sommertagen verbringen Sie am liebsten die Zeit draßen in der Natur? Dann darf der passende Sonnenschutz dabei aber nicht fehlen! Egal ob Sonnenschrim, Sonnensegel oder Markise - so schön es auch ist, sich die Sonne ins Gesicht scheinen zu lassen, ein bisschen Schatten muss auch sein.
+                      <br>
+                      <br>Entdecken Sie die Vielfalt an Möglichkeiten, um den Sommer in Ihrem Garten zu genießen. Die Temperaturen steigen und es wird fast unterträglich in der prallen Sonne draußen zu sitzen. Der richtige Sonnenschutz ist die Lösung für dieses Problem. Er spendet nicht nur Schatten sondern setzt auch noch einen farblichen Akzent.
+                      <br>
+                      <br>Smartphones, Tablets, Soundsysteme und viele weitere Produkte machen Ihr Outdoor-Erlebniss zu einer einmaligen Erinnerung. Halten Sie tolle Momente fest und teilen Sie den Spaß mit Freunden.
+                    </p>
+                  </section>
+                  <!--First slide end -->
+                  <!-- Second slide starts -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide2" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/5/500x600OBI03.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">02</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Terrasse, Garten und Balkon</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Pavillons und Sitzecken</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Sie haben noch nicht die richtige Location für Ihre Sommerparty gefunden? Warum nicht einfach im eigenen Garten feiern? Pavillons und Loungemöbel unter freiem Himmel bieten sich perfetk dafür an!
+                      <br>
+                      <br>Es ist wieder soweit - die ersten Sommerparties des Jahres stehen an. Einen netten Abend mit Freunden, gutem Essen und guten Getränken verbringen und das auch noch bei gutem Wetter im eigenen Garten. Klingt das nicht verlockend? Finden Sie den passenden Pavillon und die dazu passenden Sitzmöglichkeiten und leuten Sie zusammen mit Ihren Freunden den Sommert bei Ihnen Zuhause ein!
+                      <br>
+                      <br>Der Pavillon kann nicht nur für Feste genutzt werden, sondern spendet auch an heißen Tagen einen Ort, an dem man sich gerne aufhält. Einfach gemütliche Sitzecke unter das Zelt stellen und Entspannungsmodus an!
+                    </p>
+                  </section>
+                  <!-- Second slide ends -->
+                  <!-- Third slide starts -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide3" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/5/500x600OBI01.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">03</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Terrasse, Garten und Balkon</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Der Gartentraum</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Sie hatten schon immer im Kopf einen eigenen Teich bei Ihnen im Garten anzulegen? Unser Tipp: Bestellen Sie sich einfach einen Fertigteich und die dazugehörigen Utensilien und schon haben Sie einen ganz anderen Flair in Ihrer Oase.
+                      <br>
+                      <br>Unterschiedliche Formen und Ausführungen bieten eine Auswahl für Jedermann. Sie haben die Möglichkeit einen einfach kleinen Teich anzulegen, der Ihnen mit plätscherndem Wasser Ruhe schenkt, oder Sie betreiben etwas mehr Aufwand und legen sich sogar eigene Fische zu, denen Sie ein Zuhause in Ihrem Teich schenken.
+                      <br>
+                      <br>Zusätzlich können Sie noch ein paar farbenfrohe Pflanzen um Ihren Teich pflanzen, um diesem zum echten Hingucker zu machen!
+                    </p>
+                  </section>
+                  <!-- Third slide ends -->
+                </div>
+                <!--ebb-18-slides end -->
+              </div>
+            </div>
+          </div>
+          <!-- Part width slider end -->
+        </div>
+        <!-- Gold section 5 spots row ends -->
+        <!-- Gold section 6 spots row starts -->
+        <div class="ebb-18-gold-spot-row" id="ebb18_section6">
+          <!-- Gold section spots item start -->
+          <!-- Text column starts -->
+          <div class="ebb-18-gold-spot-text">
+            <!-- Logo image and alt text --><span class="ebb-18-gold-spot-text__logo"> <img src="https://dv7wq5l05r9b8.cloudfront.net/images/l/LogoUpdate_blume2000_20-09-16_BD1_9.png" alt="Blume2000 Logo" class="ebb-18-main-logogold"> </span>
+            <!-- Title, keep it short -->
+            <h2 class="ebb-18-gold-spot-text__title">Duftende Blumen für Sie und als Geschenk</h2>
+            <!-- Description --><span class="ebb-18-gold-spot-text__description">Blumen erfreuen das Gemüt und schenken Ihrem Zuhause eine farbenprächtige Note. Sie bieten sich auch hervorragend an, um Ihren Liebsten eine Freude zu machen können Sie ganz einfach online bestellen und die Versandaddresse eingeben. </span>
+            <!-- CTA. Use a line of text referring to the brand. What is the retailer offering related to the destination promoted? --><span class="ebb-18-gold-spot-text__offers">Bei Blume2000 finden Sie wunderschöne Sommerblumen, mit denen Sie Ihr Zuhause dekorieren können. Bestellen Sie jetzt online und sichern Sie sich satte Rabatte mit unseren Blume2000 Gutscheinen! </span>
+            <!-- Link to RLP --><a href="https://gutscheine.focus.de/gutscheine/baldur-garten" class="ebb-18-gold-spot-text__button see-button">Alle Angebote entdecken</a>
+          </div>
+          <!-- Text column wnds -->
+          <!-- Part width slider start -->
+          <div class="ebb-18-gold-spot-exposition">
+            <!-- radio-buttons and labels for slider for responsive  start-->
+            <div class="ebb-18-gold-spot-exposition__slider slider">
+              <input type="radio" name="sixth-switch" id="ebb-18-btn6-1">
+              <input type="radio" name="sixth-switch" id="ebb-18-btn6-2">
+              <input type="radio" name="sixth-switch" id="ebb-18-btn6-3">
+              <div class="ebb-18-gold-spot-exposition__second-switch">
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn6-1">1</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn6-2">2</label>
+                <label class="ebb-18-gold-spot-exposition__label" for="ebb-18-btn6-3">3</label>
+              </div>
+              <!-- radio-buttons and labels for slider for responsive end-->
+              <div class="ebb-18-slider-inner">
+                <!--ebb-18-slides start -->
+                <div class="ebb-18-slides">
+                  <!--First slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/5/500x600_Strau--_01.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">01</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Blumen, Pflanzen und Gestecke</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Bunte Sommerblumen</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Bringen Sie Farbe in Ihr Leben. Der Sommer schreit nach knalligen Tönen, auch in der Pflanzenwelt gibt es einiges zu bieten. Rosen, Orchideen und weitere Klassiker könnten Ihre Terrasse oder Balkon in einen Traum von Farben verwandeln!
+                      <br>
+                      <br>Schaffen Sie Lebensfreude mit verschiedenen Blumen und Pflanzen. Die wohl schönste Dekoration vor allem im Sommer sind Blumen in allen möglichen Farben und Übertöpfen. Sie können sich hier wirklich austoben und die Pflanzen ganz einfach zu sich nach Hause liefern lassen.
+                      <br>
+                      <br>Sobald sie eine Auswahl getroffen haben geht es an's Einpflanzen. Achten Sie darauf, dass sie Ihre Blumen mit genügend Sonnenlicht, Wasser und Nährstoffen versorgen!
+                    </p>
+                  </section>
+                  <!--First slide ends -->
+                  <!--Second slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide2" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/5/500x600_Strau--_02.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">02</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Blumen, Pflanzen und Gestecke</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Exotische Früchte</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Für ein ganzes Beet voller leckerer Obstsorten und Früchten reicht Ihnen der Platz in Ihrem Garten nicht aus? Kein Problem, wir haben die Lösung für kleinere Gärten und Balkone!
+                      <br>
+                      <br>Bestellen Sie sich ganz einfach Erdbeerpflanzen im Kasten. Das sieht nicht nur schön aus, sondern liefert Ihnen auch noch frische Früchte für den ganzen Sommer! Erdbeeren sind Ihnen nicht exotisch genug? Dann kaufen Sie sich einfach eine Ananas-Pflanze im Glasübertopf!
+                      <br>
+                      <br>So schmeckt also der Sommer und das beste daran, es kommt aus dem eigenen Garten!
+                    </p>
+                  </section>
+                  <!--Second slide end -->
+                  <!--Third slide start -->
+                  <!-- Change BG image -->
+                  <section class="ebb-18-gold-spot-exposition-slide slide slide3" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 70%), url(https://dv7wq5l05r9b8.cloudfront.net/images/media/145/5/500x600_Strau--_03.jpg);">
+                    <div class="ebb-18-gold-spot-exposition-slide__headline">
+                      <!-- Keep the number --><span class="ebb-18-gold-spot-exposition-slide__slide-number">03</span>
+                      <!-- Tag for the 1st inspirational slide, 3 words max -->
+                      <h3 class="ebb-18-gold-spot-exposition-slide__title">Blumen, Pflanzen und Gestecke</h3>
+                      <!-- Title for the 1st inspirational slide. Keep it short -->
+                      <h4 class="ebb-18-gold-spot-exposition-slide__subtitle">Besondere Anlässe</h4>
+                    </div>
+                    <!-- To break the paragraph use 2 br tags. Maximum 800 characters -->
+                    <p>Blumen eignen sich auch hervorragend als Geschenk für Ihre Liebsten. Egal ob zum Geburtstag, als kleines Dankeschön oder zum Hochzeitstag.
+                      <br>
+                      <br>Mit Blumen können Sie nie etwas falsch machen - jeder freut sich über eine kleine nette Aufmerksamkeit. Bestellen Sie ganz einfach ein passendes Gesteck und überraschen Sie die Menschen, die Ihnen wichtig sind.
+                      <br>
+                      <br>Suchen Sie sich einen schönen Blumenstrauß aus und verschenken Sie diesen an einen besonderen Menschen!
+                    </p>
+                  </section>
+                  <!--Third slide end -->
+                </div>
+                <!--ebb-18-slides end -->
+              </div>
+            </div>
+          </div>
+          <!-- Part width slider end -->
+        </div>
+        <!-- Gold section 6 spots row endw -->
+      </div>
+    </section>
+    <!-- Gold section ends -->
+    <!-- Silver spots section starts -->
+    <section class="ebb-18-section ebb-18-silver-spots">
+      <div class="ebb-18-small-container">
+        <!-- Silver section header starts -->
+        <header class="ebb-18-silver-spots__header">
+          <!-- Section Main title -->
+          <h2 class="ebb-18-silver-spots__section-title" id="ebb-18-silver-spots-title"> Weitere Tipps und Tricks für Ihr Gartenparadies</h2>
+        </header>
+        <!-- Silver section header end -->
+        <!-- Silver spots ROW start. Copy from here if you want to duplicate the row with 2 tip boxes -->
+        <div class="ebb-18-silver-spots-row">
+          <!-- Silver spots First box starts -->
+          <div class="ebb-18-silver-spots__item">
+            <div class="ebb-18-silver-spots__headline">
+              <!-- Icon -->
+              <div class="ebb-18-silver-spots__1st">
+                <img src="https://dv7wq5l05r9b8.cloudfront.net/images/media/145/s/SilberRelaxIcon.png" alt="Sonnenschirm">
+              </div>
+              <!-- Tag. Keep it short -->
+              <div class="ebb-18-silver-spots__2nd">
+                <h3 class="ebb-18-silver-spots__title">Sommerparadies bei Ihnen im Garten oder auf dem Balkon</h3>
+              </div>
+            </div>
+            <!-- Main title  -->
+            <h4 class="ebb-18-silver-spots__subtitle">Wie Sie den Sommer zu sich nach Hause holen</h4>
+            <!-- List of tips starts, you can add more tips, using the whole li section. Add a min of 2 tips -->
+            <ul class="ebb-18-silver-spots__description-list">
+              <!-- Tip One -->
+              <li class="ebb-18-silver-spots__description-item">Mit knalligen Farben schaffen Sie Sommerfeeling. Bunte Blumen und Pflanzen sorgen dafür, dass Ihr Zuhause lebendiger und fröhlicher aussieht. Wie wäre es zum Beispiel mit Balkonpflanzen oder Sträucher für den Garten?</li>
+              <!-- Tip Two -->
+              <li class="ebb-18-silver-spots__description-item">Neue Gartenmöbel und -geräte helfen Ihnen eine Wohlfühloase zu kreieren. Lassen Sie Ihrer Kreativität freien Lauf. Ein kleiner Teich oder sogar ein eigener Swimmingpool machen Ihren Sommer perfekt!</li>
+              <!-- Tip Three -->
+              <li class="ebb-18-silver-spots__description-item">Leckere Sommergerichte versetzen Sie in die richtige Stimmung. Egal ob Grillangebote oder leichte Sommergerichte - hier ist für jeden Geschmack das richtige dabei!</li>
+            </ul>
+            <!-- List of tips ends -->
+            <!-- Logos at the bottom starts. Maximum 4 logos per box -->
+            <!-- Introduce them with a short title -->
+            <h5 class="ebb-18-silver-spots__partners-title"> Die besten Gutscheine &amp; Angebote</h5>
+            <div class="ebb-18-silver-spot-wrap">
+              <!-- Retailer 1 starts -->
+              <!-- Add link -->
+              <a href="https://gutscheine.focus.de/gutscheine/netto" class="ebb-18-silver-spot-action"> <span class="ebb-18-silver-spot-logo">
+                  <!-- Add logo and alttext --> <img src="https://dv7wq5l05r9b8.cloudfront.net/160x/images/n/netto_logo_BD1_9.png" alt="Netto Logo" class="ebb-18-main-logosilver">
+                </span>
+                <!-- Add CTA text. Super short! --><span class="ebb-18-silver-spot-values"> Top Rabatte </span>
+              </a>
+              <!-- Retailer 1 ends -->
+              <!-- Retailer 2 starts -->
+              <!-- Add link -->
+              <a href="https://gutscheine.focus.de/gutscheine/otto" class="ebb-18-silver-spot-action"> <span class="ebb-18-silver-spot-logo">
+                  <!-- Add logo and alttext --> <img src="https://dv7wq5l05r9b8.cloudfront.net/images/o/otto-gutscheine_9.png" alt="OTTO Logo" class="ebb-18-main-logosilver">
+                </span>
+                <!-- Add CTA text. Super short! --><span class="ebb-18-silver-spot-values"> Jetzt sparen </span>
+              </a>
+              <!-- Retailer 2 ends -->
+              <!-- Retailer 3 starts -->
+              <!-- Add link -->
+              <a href="https://gutscheine.focus.de/gutscheine/gartenxxl" class="ebb-18-silver-spot-action"> <span class="ebb-18-silver-spot-logo">
+                  <!-- Add logo and alttext --> <img src="https://dv7wq5l05r9b8.cloudfront.net/160x/images/g/gartenxxl_logo2_9.png" alt="GartenXXL Logo" class="ebb-18-main-logosilver">
+                </span>
+                <!-- Add CTA text. Super short! --><span class="ebb-18-silver-spot-values"> Gartenmöbel </span>
+              </a>
+              <!-- Retailer 3 ends -->
+              <!-- Retailer 4 starts -->
+              <!-- Add link -->
+              <a href="https://gutscheine.focus.de/gutscheine/baldur-garten" class="ebb-18-silver-spot-action"> <span class="ebb-18-silver-spot-logo">
+                  <!-- Add logo and alttext --> <img src="https://dv7wq5l05r9b8.cloudfront.net/images/b/baldurgarten_logo_9.png" alt="baldur garten Logo" class="ebb-18-main-logosilver">
+                </span>
+                <!-- Add CTA text. Super short! --><span class="ebb-18-silver-spot-values"> Blumen und mehr </span>
+              </a>
+              <!-- Retailer 4 ends -->
+            </div>
+            <!-- Bottom part width partners logo end -->
+          </div>
+          <!-- Silver spots first box ends -->
+          <!-- Silver spots second box starts -->
+          <div class="ebb-18-silver-spots__item">
+            <div class="ebb-18-silver-spots__headline">
+              <!-- Icon -->
+              <div class="ebb-18-silver-spots__1st">
+                <img src="https://dv7wq5l05r9b8.cloudfront.net/images/media/145/s/SilberShoppingIcon.png" alt="Geldschein">
+              </div>
+              <!-- Tag. Keep it short -->
+              <div class="ebb-18-silver-spots__2nd">
+                <h3 class="ebb-18-silver-spots__title">Wann Sie welche Produkte günstig kaufen können</h3>
+              </div>
+            </div>
+            <!-- Main title  -->
+            <h4 class="ebb-18-silver-spots__subtitle">Wie Sie am meisten Geld sparen können</h4>
+            <!-- List of tips starts, you can add more tips, using the whole li section. Add a min of 2 tips -->
+            <ul class="ebb-18-silver-spots__description-list">
+              <!-- Tip One -->
+              <li class="ebb-18-silver-spots__description-item">Um Ihr Zuhause mit neuen Möbeln und Accessoires auszustatten sollten Sie am besten im Juni, Juli und August zuschlagen. Hier ergattern Sie die meisten Prozente!</li>
+              <!-- Tip Two -->
+              <li class="ebb-18-silver-spots__description-item">Die Sommerküche lockt mit leckeren Gerichten, die besten Angebote finden Sie die ganze Saison über. Vor allem Grillangebote gibt es fast jede Woche!</li>
+              <!-- Tip Three -->
+              <li class="ebb-18-silver-spots__description-item">Angebote für Gartengeräte und Gartenmöbel finden Sie vor allem im Juli und August. Halten Sie Ausschau und speichern Sie Ihren Favoriten am besten ab und schlagen sie mit unseren Gutscheinen zu!</li>
+            </ul>
+            <!-- List of tips ends -->
+            <!-- Logos at the bottom starts. Maximum 4 logos per box -->
+            <!-- Introduce them with a short title -->
+            <h5 class="ebb-18-silver-spots__partners-title"> Top Angebote zu Schnäppchenpreisen</h5>
+            <div class="ebb-18-silver-spot-wrap">
+              <!-- Retailer 1 starts -->
+              <!-- Add link -->
+              <a href="https://gutscheine.focus.de/gutscheine/conrad" class="ebb-18-silver-spot-action"> <span class="ebb-18-silver-spot-logo">
+                  <!-- Add logo and alttext --> <img src="https://dv7wq5l05r9b8.cloudfront.net/160x/images/c/conrad-gutscheincodes_logo_9.png" alt="Conrad Logo" class="ebb-18-main-logosilver">
+                </span>
+                <!-- Add CTA text. Super short! --><span class="ebb-18-silver-spot-values"> Top Angebote </span>
+              </a>
+              <!-- Retailer 1 ends -->
+              <!-- Retailer 2 starts -->
+              <!-- Add link -->
+              <a href="https://gutscheine.focus.de/gutscheine/urbanara" class="ebb-18-silver-spot-action"> <span class="ebb-18-silver-spot-logo">
+                  <!-- Add logo and alttext --> <img src="https://dv7wq5l05r9b8.cloudfront.net/images/u/urbanara_logo_BD1_9.png" alt="Urbanara Logo" class="ebb-18-main-logosilver">
+                </span>
+                <!-- Add CTA text. Super short! --><span class="ebb-18-silver-spot-values"> Schicke Artikel </span>
+              </a>
+              <!-- Retailer 2 ends -->
+              <!-- Retailer 3 starts -->
+              <!-- Add link -->
+              <a href="https://gutscheine.focus.de/gutscheine/tectake" class="ebb-18-silver-spot-action"> <span class="ebb-18-silver-spot-logo">
+                  <!-- Add logo and alttext --> <img src="https://dv7wq5l05r9b8.cloudfront.net/images/t/TecTake_Logo_9.png" alt="TecTake Logo" class="ebb-18-main-logosilver">
+                </span>
+                <!-- Add CTA text. Super short! --><span class="ebb-18-silver-spot-values"> Jetzt sparen </span>
+              </a>
+              <!-- Retailer 3 ends -->
+              <!-- Retailer 4 starts -->
+              <!-- Add link -->
+              <a href="https://gutscheine.focus.de/gutscheine/quelle" class="ebb-18-silver-spot-action"> <span class="ebb-18-silver-spot-logo">
+                  <!-- Add logo and alttext --> <img src="https://dv7wq5l05r9b8.cloudfront.net/90x/images/q/Quelle_Logo_9.png" alt="Quelle Logo" class="ebb-18-main-logosilver">
+                </span>
+                <!-- Add CTA text. Super short! --><span class="ebb-18-silver-spot-values"> Reduzierte Artikel </span>
+              </a>
+              <!-- Retailer 4 ends -->
+            </div>
+            <!-- Bottom part width partners logo end -->
+          </div>
+          <!-- Silver spots second box ends -->
+        </div>
+        <!-- Silver spots ROW ends. Copy until here if you want to duplicate the row with 2 tip boxes, and paste it after this comment -->
+      </div>
+    </section>
+    <!-- Silver spots whole section ends -->
+  </div>
+  <!-- Silver spots whole section ends -->
+  <!-- Main container ends -->
+  <!-- Title for vouchers starts -->
+  <div class="ebb-18-main-container">
+    <div class="ebb-18-vouchertitle">
+      <h2 class="ebb-18-vouchertitle__section-title" id="ebb-18-voucher-spots"> Mit weiteren Gutscheinen sparen</h2>
+    </div>
+  </div>
+  <!-- Title for vouchers ends -->

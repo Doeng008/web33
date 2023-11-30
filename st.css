@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    height: 150vh; /* Memberikan tinggi halaman yang cukup untuk menscroll */
+}
+.container{
+ 
+  background-image:url(img/WhatsApp-Image-2022-12-03-at-13.41.49-1-e1671204182812.jpeg);
+    padding: 50%;
+    margin: 50%px;
+ 
+    border-radius: 50px;
+    box-shadow:  35px 35px 70px #dacbcb,
+             -35px -35px 70px #f0e1e1;
+     height: 100vh; /* Memberikan tinggi container yang sesuai dengan tinggi layar */
+     position: relative;
+             
+}
+
+
+.card{
+  border-radius: 74px;
+  box-shadow:  35px 35px 70px #dacbcb,
+           -35px -35px 70px #f0e1e1;
+           
+}
+
+.frame{
+  position: relative;
+  background-image:url(img/WhatsApp-Image-2023-07-09-at-22.50.28.jpeg);
+  position: fixed;
+    padding: 50%;
+    margin: 30px;
+    width: 600px;
+    height: 600px;
+    border-radius: 74px;
+    box-shadow:  35px 35px 70px #dacbcb,
+             -35px -35px 70px #f0e1e1;
+             
+
+}
+
+
+#imageContainer {
+  position: absolute;
+  left: 50%;
+  bottom: -100px; /* Mulai dari bawah layar (tinggi gambar + beberapa px di luar layar) */
+  transform: translateX(-50%);
+  transition: bottom 0.5s ease-in-out;
+}
+
+#imageContainer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#imageContainer.active {
+  bottom: 50%; /* Setengah dari tinggi container */
+}

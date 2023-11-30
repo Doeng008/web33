@@ -1,0 +1,276 @@
+body {
+	margin: 0;
+	}
+	
+	a{
+	  text-decoration: none;
+	}
+	
+	header{
+	  display: flex;
+	  justify-content: center;
+	  background-color: #c5d2c7;
+	  position: fixed;
+	  top: 0px;
+	  width: 100vw;
+	  z-index: 10;
+	  height: 90px;
+	}
+	
+	header img{
+	  width: 180px;
+	}
+	
+	.search {
+	  width: 100%;
+	  position: relative;
+	  display: flex;
+	  left: 15%;
+	}
+	
+	.searchTerm {
+	  width: 40%;
+	  border: 3px solid #ffff;
+	  border-right: none;
+	  padding: 5px;
+	  height: 20px;
+	  border-radius: 10px 0 0 10px;
+	  outline: none;
+	  color: #93939a;
+	}
+	
+	.searchButton {
+	  width: 50px;
+	  height: 36px;
+	  border: 1px solid #ffff;
+	  background: #ffff;
+	  text-align: center;
+	  color: #c5d2c7;
+	  border-radius: 0 10px 10px 0;
+	  cursor: pointer;
+	  font-size: 20px;
+	}
+	
+	.wrap{
+	  width: 30%;
+	  position: absolute;
+	  top: 20px;
+	  right: 0%;
+	}
+	
+	.user{
+	  position: absolute;
+	  top: 23px;
+	  right: 5%;
+	}
+	
+	/*Navigation*/
+	nav{
+	  display: flex;
+	  background-color: #c5d2c7;
+	  height: 50px;
+	  justify-content: center;
+	  align-items: center;
+	  position: fixed;
+	  width: 100vw;
+	  top: 89px;
+	  z-index: 10;
+	}
+	
+	nav a{
+	  font-family: 'Open Sans', sans-serif;
+	  font-weight: bold;
+	  font-size: 20px;
+	  color: white;
+	  padding: 50px;
+	  text-decoration: none;
+	}
+	
+	nav a:hover {
+	  color: #93939a;
+	  font-weight: bold;
+	}
+	
+	.dropdown{
+	  position: relative;
+	 }
+	
+	.dropbtn {
+	  font-family: 'Open Sans', sans-serif;
+	  font-weight: bold;
+	  font-size: 20px;
+	  color: white;
+	  padding: 10px 50px;
+	  display: block;
+	}
+	
+	.dropdown_content {
+	  display: none;
+	  position: absolute;
+	  background-color: #c5d2c7;
+	  z-index: 10;
+	  width: 160px;
+	  padding: 10px;
+	  }
+	
+	.dropdown_content a {
+	  position: relative;
+	  padding: 5px;
+	  color: white;
+	  display: block;
+	  font-family: 'Open Sans', sans-serif;
+	  font-size: 18px;
+	  text-decoration: none;
+	  }
+	
+	.dropdown_content a:hover{
+	  padding: 5px;
+	}
+	  
+	.dropdown:hover .dropdown_content {
+	  display: block;
+	}
+	
+	.dropdown_content:hover{
+	  margin: 0px;
+	}
+	/*end*/
+	
+	section{
+	  margin-top: 160px;
+	}
+	
+	/*Banner*/
+	.banner-container{
+	  width: 96vw;
+	  height: 40%;
+	  margin: auto;
+	  overflow: hidden;
+	  position: relative;
+	}
+	
+	.banner-slide{
+	  display: flex;
+	  width: 100%;
+	  height: 40%;
+	}
+	
+	.banner-slide img{
+	  width: 102%;
+	}
+	
+	#previous{
+	  position: absolute;
+	  top: 50%;
+	  z-index: 9;
+	  left: 5%;
+	  font-size: 50px;
+	  opacity: 1;
+	  color: white;
+	  cursor: pointer;
+	}
+	
+	#next{
+	  position: absolute;
+	  top: 50%;
+	  z-index: 9;
+	  right: 5%;
+	  font-size: 50px;
+	  opacity: 1;
+	  color: white;
+	  cursor: pointer;
+	}
+	
+	/*RANKING*/
+	
+	.ranking{
+	  font-size: 36px;
+	  text-align: center;
+	  font-family: 'Leckerli One', cursive;
+	  color: #7d7d82;
+	}
+	
+	#rank-container{
+	  display: flex;
+	  justify-content: space-around;
+	  height: 37%;
+	  margin-bottom: 50px;
+	  width: 100vw;
+	}
+	
+	.rank-product{
+	  display: flex;
+	  background-color: #fceeed;
+	  padding: 20px;
+	  width: 24%;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+	
+	.rank-image img{
+	  width: 100%;
+	}
+	
+	.rank-name a{
+	  text-align: center;
+	  font-size: 18px;
+	  font-family: 'Open Sans', sans-serif;
+	  color: #7d7d82;
+	  display: inline-block;
+	  margin: 15px;
+	  text-decoration: none;
+	}
+	
+	.rank-star{
+	  display: block;
+	  text-align: center;
+	  color: #f4b5b6;
+	}
+	
+	/*footer*/
+	footer{
+	  display: flex;
+	  width: 100vw;
+	  justify-content: space-around;
+	  flex-wrap: wrap;
+	  box-sizing: border-box;
+	  background-color: #c5d2c7;
+	  margin: 0 auto;
+	  font-family: 'Open Sans', sans-serif;
+	  height: 12%;
+	  bottom: 0;
+	}
+	
+	.logo img{
+	  width: 100px;
+	  border-radius: 100%;
+	  margin-top: 20px;
+	}
+	
+	.company, .terms, .help, .connect{
+	  display: flex;
+	  flex-direction: column;
+	  margin-right: 10px;
+	}
+	
+	h5{
+	  margin-bottom: 5px;
+	  font-size: 18px;
+	  color: white;
+	}
+	
+	.company a{
+	  color: #ffff;
+	  text-decoration: none;
+	  margin-bottom: 0.5px;
+	}
+	
+	.company a:hover{
+	  color: #93939a;
+	}
+	
+	.smicon{
+	  color: white;
+	  font-size: 40px;
+	}
